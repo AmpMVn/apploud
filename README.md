@@ -47,6 +47,9 @@ Priklad vystupu:
     # Test GitLab API tokenu
     docker compose run --rm app composer test-token
 
+    # Test Cache
+    docker compose run --rm app composer test-cache <group_id> 
+
 ## Reseni problemu
 
 Pri problemu s pravy zapisu do slozky var:
