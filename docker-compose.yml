@@ -1,0 +1,18 @@
+services:
+  app:
+    container_name: app
+    build: .
+    volumes:
+      - .:/app
+      - app-cache:/app/var
+    working_dir: /app
+    env_file:
+      - .env.dist
+    environment:
+      - APP_ENV=dev
+      - GITLAB_TOKEN=${GITLAB_TOKEN}
+      - GITLAB_BASE_URL=${GITLAB_BASE_URL}
+    tty: true
+
+volumes:
+  app-cache:

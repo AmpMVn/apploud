@@ -1,0 +1,10 @@
+/vendor/
+/.php-cs-fixer.cache
+/.phpstan.result.cache
+/.phpunit.result.cache
+/var/
+.env
+.env.test
+composer.lock
+.idea/
+docker-compose.override.yml
