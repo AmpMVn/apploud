@@ -13,6 +13,7 @@ Pro spusteni je potreba Docker. Instalace probiha nasledovne:
     docker compose run --rm app composer install
     docker compose run --rm app cp .env.dist .env
     
+    # Upravit .env a nastavit GITLAB_BASE_URL (https://gitlab.com/api/v4)
     # Upravit .env a nastavit GITLAB_TOKEN (Personal Access Token z GitLabu)
 
 ## Spusteni kontroly pristupu

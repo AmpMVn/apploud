@@ -8,3 +8,8 @@
 composer.lock
 .idea/
 docker-compose.override.yml
+/var/cache/*
+/var/log/*
+!var/cache/.gitkeep
+!var/log/.gitkeep
+.DS_Store

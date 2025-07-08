@@ -4,7 +4,7 @@ services:
     build: .
     volumes:
       - .:/app
-      - app-cache:/app/var
+      - ./var/cache:/app/var/cache
     working_dir: /app
     env_file:
       - .env.dist
@@ -13,6 +13,3 @@ services:
       - GITLAB_TOKEN=${GITLAB_TOKEN}
       - GITLAB_BASE_URL=${GITLAB_BASE_URL}
     tty: true
-
-volumes:
-  app-cache:
